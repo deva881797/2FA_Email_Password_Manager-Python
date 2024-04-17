@@ -1,2 +1,6 @@
-The Password Manager will provide features for creating, storing, and managing passwords, as well as generating strong passwords .
-Users should authenticate themselves using a master password and OTP verification to access their password vault. The master password should be securely salted, hashed and not stored in plaintext.
+The application shall allow users to register by providing an email and creating a master password.
+The application shall authenticate users using their master password and OTP.
+The application shall allow users to add, edit, delete and list passwords for various accounts.
+The application encrypt and securely store passwords using strong encryption algorithms i.e. Fernet Encryption.
+The application shall provide a feature to generate strong, random passwords.
+The application shall implement strong encryption algorithms i.e. fernet encryption algorithm to protect stored passwords.
