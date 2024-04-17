@@ -5,12 +5,12 @@ import smtplib
 def otp(receiver_email, z):
     make_otp = str(random.randint(100000, 999999))  # generating a random 6-digit OTP
     global sender_email
-    sender_email = 'devashishghate02@gmail.com'  # sender Email address
+    sender_email = 'Your_Email_Address'  # sender Email address
     global server  # setting up server
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     valid_receiver_email = email_verification(receiver_email)  # verify receiver email address
-    password = "ksabmgphcdljusch"
+    password = "Password"   # Sender Email APP Password
     server.login(sender_email, password)
     # Email details
     body = "Dear," + "\n" + "\n" + "Your OTP for Password Manager is " + str(make_otp) + "."
